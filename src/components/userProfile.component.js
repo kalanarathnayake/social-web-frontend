@@ -5,10 +5,8 @@ import Swal from "sweetalert2";
 
 export default function UserProfile() {
     // State variables to manage component state
-    const [searchInput, setSearchInput] = useState('');
-    const [filteredResults, setFilteredResults] = useState([]);
     const [APIData, setAPIData] = useState([]);
-    const [packages, setPackages] = useState([]);
+
     const [UserId, setUserId] = useState([]);
 
     const firstName = localStorage.getItem('FirstName');
@@ -115,34 +113,7 @@ export default function UserProfile() {
                                         </p>
                                     </div>
                                 </div>
-                                {/* <div class="mb-6">
-                                    <div class="flex justify-between flex-wrap gap-2 w-full">
-                                        <span class="text-gray-700 font-bold">Web Developer</span>
-                                        <p>
-                                            <span class="text-gray-700 mr-2">at ABC Company</span>
-                                            <span class="text-gray-700">2017 - 2019</span>
-                                        </p>
-                                    </div>
-                                    <p class="mt-2">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus est vitae
-                                        tortor ullamcorper, ut vestibulum velit convallis. Aenean posuere risus non velit egestas
-                                        suscipit.
-                                    </p>
-                                </div> */}
-                                {/* <div class="mb-6">
-                                    <div class="flex justify-between flex-wrap gap-2 w-full">
-                                        <span class="text-gray-700 font-bold">Web Developer</span>
-                                        <p>
-                                            <span class="text-gray-700 mr-2">at ABC Company</span>
-                                            <span class="text-gray-700">2017 - 2019</span>
-                                        </p>
-                                    </div>
-                                    <p class="mt-2">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus est vitae
-                                        tortor ullamcorper, ut vestibulum velit convallis. Aenean posuere risus non velit egestas
-                                        suscipit.
-                                    </p>
-                                </div> */}
+
                             </div>
                         </div>
                     </div>
