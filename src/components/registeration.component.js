@@ -6,7 +6,20 @@ import 'react-toastify/dist/ReactToastify.css';
 class SignUp extends Component {
     constructor(props) {
         super(props);
-        
+        this.state = {
+            firstName: '',
+            lastName: '',
+            email: '',
+            password: '',
+            confirmPassword: '',
+            phoneNumber: '',
+            location: '',
+            jobTitle: '',
+            role: '',
+            imgURL: '',
+            passwordMatchError: ''
+        };
+
     }
 
     handleSignUp = async (e) => {
